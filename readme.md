@@ -1,4 +1,4 @@
-# Beautiful table
+# Beautiful Table
 
 
 1. Run Pip Install
