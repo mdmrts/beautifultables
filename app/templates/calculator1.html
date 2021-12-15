@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div class = "centered">
+    <div style="padding: 10px">
+    <h1>My Calculator</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-danger alert-dismissible">
+             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+             {{ messages }}
+            </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form action="/calculator1" method="POST">
+        <label for="value1">Value 1:</label><br>
+        <input type="text" id="value1" name="value1" value="1"><br>
+        <label for="value2">Value 2:</label><br>
+        <input type="text" id="value2" name="value2" value="2"><br>
+        <fieldset>
+            <br>
+        <legend>Select Operation:</legend>
+          <div>
+            <input type="radio" name="operation" id="addition" value="addition" checked>
+            <label for="addition">addition</label>
+          </div>
+          <div>
+            <input type="radio" name="operation" id="subtraction" value="subtraction">
+            <label for="subtraction">subtraction</label>
+          </div>
+          <div>
+            <input type="radio" name="operation" id="multiplication" value="multiplication">
+            <label for="multiplication">multiplication</label>
+          </div>
+            <div>
+            <input type="radio" name="operation" id="division" value="division">
+            <label for="multiplication">division</label>
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+        </div>
+
+</div>
+{% endblock %}

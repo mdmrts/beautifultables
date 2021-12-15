@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" /></head>
+
+  <div class="wrapper">
+    <div class="box content">
+
+        <div class = "herotext">
+        <h1>This is the Calculator Program </h1>
+            <button class = "buttonclass" onclick="document.location='/calculator1'"> Click Here </button>
+        </div>
+
+
+<br>
+
+
+{% endblock %}
+

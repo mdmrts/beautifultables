@@ -1,0 +1,246 @@
+body {
+    margin: 40px;
+    font-family: Arial;
+
+}
+
+.centered {
+    background-color: antiquewhite;
+    width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+    position: relative;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 200px 200px;
+    grid-template-areas:
+    "content content content"
+    "footer  footer  footer";
+    background-color: lightsteelblue;
+    color: #444;
+    width: auto;
+    height: 84vh;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 0px;
+    padding: 0px;
+    font-size: 100%;
+}
+
+.header,
+.footer {
+    background-color: #999;
+    text-align: center;
+}
+
+.content {
+    background-color: forestgreen;
+    background: url("hero.jpg") center center;
+    background-size: cover;
+    padding: 200px;
+}
+.herotext {
+    text-align: center;
+    background-color: cadetblue;
+    border-radius: 20px;
+    color: white;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.buttonclass {
+    background-color: #d0e8ff ; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.buttonclass:hover {
+    cursor: pointer;
+    background-color: darkkhaki;
+    color: black;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: darkkhaki;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: cadetblue;
+    color: white;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    margin-top: 50px;
+}
+
+.header1 {
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.header3 {
+    margin-top: 20px;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 300px;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+
+}
+
+.div3 {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .logo img {
+        max-width: 40px;
+        position: absolute;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        font-size: 10px;
+        background-color: forestgreen;
+        background: url("images/hero.jpg") center center;
+        background-size: cover;
+        padding: 50px;
+    }
+    .herotext {
+        font-size: 10px;
+        text-align: center;
+        background-color: darkslategrey;
+        border-radius: 20px;
+        color: white;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 200px 200px;
+        grid-template-areas:
+    "content content content"
+    "footer  footer  footer";
+        background-color: darkseagreen;
+        color: #444;
+        width: 250px;
+        height: 650px;
+    }
+
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 0px;
+        padding: 0px;
+        font-size: 70%;
+    }
+
+    .header,
+    .footer {
+        background-color: #999;
+        text-align: center;
+    }
+
+}
