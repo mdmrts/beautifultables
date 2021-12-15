@@ -1,4 +1,4 @@
-# Beautiful Table
+# Beautiful table
 
 
 1. Run Pip Install
@@ -10,4 +10,5 @@ pip install -r requirements.txt
 
 
 
-![](table_2.png)
+![](../../Desktop/Screen Shot 2021-12-14 at 8.47.55 PM.png)
+![](table.png)
